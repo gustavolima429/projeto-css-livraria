@@ -3,19 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*body {
+    background-color: darkgrey;
+}*/
 body {
-    background-color: #c0c0c0;
+    background: linear-gradient(to right, rgb(0, 26, 255), rgb(0, 255, 200), rgb(225, 0, 255), rgb(98, 0, 128), rgb(255, 102, 0), rgb(117, 130, 0), rgb(180, 130, 238));
+    padding: 20px;
+    text-align: center;
+    
 }
-
-
-
+/*
+#rodape {
+    background-color: rgba(99, 99, 99, 0.651);
+}
+*/
+#rodape {
+        background: #00fffb;
+        background: radial-gradient(circle, rgba(0, 255, 251, 1) 0%, rgb(11, 7, 74) 100%);
+        border-radius: 20px;
+}
 /*********header*********/
 #topo {
     background-color: bisque;
-    width: 80%;
-    margin: 0 auto;
+    width: 80%; 
     height: 100px;
+    margin: 0 auto;
     border-radius: 100px;
     
 }
@@ -27,20 +39,14 @@ body {
     text-align: center;
 }
 
-/*********main*********/
-.destaque h2 {
-    color: blue;
-}
-.sobre h3 {
-    color: red;
-}
+
 
 /*********menu*********/
 #menu  {
     background-color: bisque;
     width: 80%;
     margin: 0 auto;
-    height: 100px;
+    height: 50px;
     border-radius: 10px; 
     border: 1px solid black;
 }
@@ -50,13 +56,67 @@ body {
     width: 100px;
     background-color: coral;
     border-radius: 3px;
+    height: 40px;
+    padding: 10px 0;
     
 }
 #menu ul{
     text-align:center;
-    height:30px;
+    height:20px;
     margin-top:15px;
     
+}
+#menu ul li:hover {
+    width: 120px;
+    background-color: black;
+    border-top: 3px solid yellow;
+    color: white;
+}
+
+
+/*********main*********/
+.destaque {
+    width: 80%;
+    background-color: aliceblue;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.destaque h2 {
+
+    color: blue;
+}
+.sobre h3 {
+    color: red;
+
+}
+
+.sobre{
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.destaque ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.destaque ul li {
+    width:46% ;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    align-items: center;
+}
+.destaque ul li img { 
+     border-radius: 20% ;
+     width: 150px; 
+     height: 230px;
+}
+.destaque ul li img:hover { 
+    border-bottom: 10px solid yellow;
 }
 
 
